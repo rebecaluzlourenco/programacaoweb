@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Escola Passinhos - Formulário de Inscrição</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis:400,600,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Escola Passinhos
+            </span>
+          </a>
+          <div class="custom_menu-btn">
+            <button onclick="openNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+          </div>
+          <div id="myNav" class="overlay">
+            <div class="overlay-content">
+              <a href="index.html">Home</a>
+            </div>
+          </div>
+      </div>
+      </nav>
+    </header>
+    <!-- end header section -->
+
+  </div>
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="box">
+        <div class="heading_container">
+          <h2>
+            <span>Formulário de Inscrição</span>
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-md-10 mx-auto">
+            <p>
+              Preencha corretamente todos os dados para garantir sua vaga.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about section -->
+
+  <div class="footer_bg">
+
+    <!-- contact section -->
+
+    <section class="contact_section ">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-7 mx-auto">
+            <form action="https://630eb2e6379256341880576c.mockapi.io/api/v1/inscricao" method="post">
+                <!--cria formulário método get e envia para algum lugar-->
+                     
+                    <legend> Dados do Aluno </legend>
+                    <div>
+                        <label>Nome*:</label>
+                        <input autofocus maxlength="30" placeholder="Digite o nome" type="text" id="nomeAluno" name="nomeAluno" required>
+                    </div>
+                    <div>
+                        <label>Endereço:</label>
+                        <input autofocus maxlength="30" placeholder="Rua/Avenida" type="text" id="endereco" name="endereco">
+                    </div>
+                    <div>
+                        <label>Número:</label>
+                        <input autofocus maxlength="10" placeholder="Digite o número" type="text" id="numero" name="numero">
+                    </div>
+                    <div>
+                        <label>Complemento:</label>
+                        <input autofocus maxlength="10" placeholder="Digite o complemento" type="text" id="complemento" name="complemento">
+                    </div>
+                    <div>
+                        <label>Bairro:</label>
+                        <input autofocus maxlength="20" placeholder="Digite o bairro" type="text" id="bairro" name="bairro">
+                    </div>
+                    <div>
+                        <label>Cidade:</label>
+                        <input autofocus maxlength="20" placeholder="Digite a cidade" type="text" id="cidade" name="cidade">
+                    </div>
+                    <div>
+                        <label>Estado:</label>
+                        <input autofocus maxlength="2" placeholder="UF" type="text" id="estado" name="estado">
+                    </div>
+                    <div>
+                        <label>CEP:</label>
+                        <input autofocus maxlength="8" name="cep" pattern="[0-9]{5}-[0-9]{3}" title="Padrão do CEP: 99999-999" placeholder="Digite o CEP" type="text" id="cep" name="cep">
+                    </div>
+                    <div>
+                        <label>Telefone:</label>
+                        <input autofocus maxlength="10" placeholder="Digite o telefone" type="text" id="tel" name="tel">
+                    </div>
+                    <div>
+                        <label>Celular*:</label>
+                        <input autofocus maxlength="11" placeholder="Digite o celular" type="text" id="celAluno" name="celAluno" required>
+                    </div>
+                    <div>
+                        <label>Email*:</label>
+                        <input autofocus maxlength="20" placeholder="Digite o email" type="text" id="emailAluno" name="emailAluno" required>
+                    </div>
+                    <div>
+                        <label>Cor*:</label>
+                        <select name="cor" required> 
+                            <option value="branca">Branca</option>
+                            <option value="preta">Preta</option>
+                            <option value="parda">Parda</option>
+                            <option value="amarela">Amarela</option>
+                            <option value="indigena">Indígena</option>
+                        </select>
+                    </div>
+                    <hr>
+
+                    <legend>Dados do Pai </legend>
+                    <div>
+                        <label>Nome*:</label>
+                        <input autofocus maxlength="30" placeholder="Digite o nome" type="text" id="nomePai" name="nomePai" required>
+                    </div>
+                    <div>
+                      <label>Data de Nascimento:</label>
+                      <input name="dtnascPai" value="2020-01-01" type="date" max="2020-01-01" min="1901-01-01" id="dtnascPai">
+                    </div>
+                    <div>
+                      <label>Naturalidade:</label>
+                      <input autofocus maxlength="10" placeholder="Digite a naturalidade" type="text" id="natPai" name="natPai">
+                    </div>
+                    <div>
+                      <label>Instrução:</label>
+                      <select name="instrucaopai" id="instrucaopai" required> 
+                        <optgroup label="Selecione o grau de instrução"></optgroup>
+                        <option value="fundcompleto">Fundamental Completo</option>
+                        <option value="fundincompleto">Fundamento Incompleto</option>
+                        <option value="mediocompleto">Médio Completo</option>
+                        <option value="medioincompleto">Médio Incompleto</option>
+                        <option value="superiorcompleto">Superior Completo</option>
+                        <option value="superiorincompleto">Superior Incompleto</option>
+                    </select>
+                    </div>
+                    <div>
+                      <label>Profissão:</label>
+                      <input autofocus maxlength="15" placeholder="Digite a profissão" type="text" id="profPai" name="profPai">
+                    </div>
+                    <div>
+                      <label>Celular*:</label>
+                      <input autofocus maxlength="11" placeholder="Digite o celular" type="text" id="celPai" name="celPai" required>
+                    </div>
+                    <div>
+                      <label>Email*:</label>
+                      <input autofocus maxlength="20" placeholder="Digite o email" type="text" id="emailPai" name="emailPai" required>
+                    </div>
+                    <div>
+                        <label>CPF*:</label>
+                        <input autofocus maxlength="11" placeholder="Digite o cpf" type="text" id="cpfPai" name="cpfPai" required>
+                    </div>
+                    <hr>
+
+                    <legend>Dados da Mãe</legend>
+                    <div>
+                      <label>Nome*:</label>
+                      <input autofocus maxlength="30" placeholder="Digite o nome" type="text" id="nomeMae" name="nomeMae" required>
+                  </div>
+                  <div>
+                    <label>Data de Nascimento:</label>
+                    <input name="dtnascMae" value="2020-01-01" type="date" max="2020-01-01" min="1901-01-01" id="dtnascMae">
+                  </div>
+                  <div>
+                    <label>Naturalidade:</label>
+                    <input autofocus maxlength="10" placeholder="Digite a naturalidade" type="text" id="natMae" name="natMae">
+                  </div>
+                  <div>
+                    <label>Instrução:</label>
+                    <select name="instrucaomae" id="instrucaomae" required> 
+                      <optgroup label="Selecione o grau de instrução"></optgroup>
+                      <option value="fundcompleto">Fundamental Completo</option>
+                      <option value="fundincompleto">Fundamento Incompleto</option>
+                      <option value="mediocompleto">Médio Completo</option>
+                      <option value="medioincompleto">Médio Incompleto</option>
+                      <option value="superiorcompleto">Superior Completo</option>
+                      <option value="superiorincompleto">Superior Incompleto</option>
+                  </select>
+                  </div>
+                  <div>
+                    <label>Profissão:</label>
+                    <input autofocus maxlength="15" placeholder="Digite a profissão" type="text" id="profMae" name="profMae">
+                  </div>
+                  <div>
+                    <label>Celular*:</label>
+                    <input autofocus maxlength="11" placeholder="Digite o celular" type="text" id="celMae" name="celMae" required>
+                  </div>
+                  <div>
+                    <label>Email*:</label>
+                    <input autofocus maxlength="20" placeholder="Digite o email" type="text" id="emailMae" name="emailMae" required>
+                  </div>
+                  <div>
+                      <label>CPF*:</label>
+                      <input autofocus maxlength="11" placeholder="Digite o cpf" type="text" id="cpfMae" name="cpfMae" required>
+                  </div>
+                  <hr>
+
+                    <legend>Dados do Curso </legend>
+                    <div>
+                        <label>Nome do Curso*:</label>
+                        <select name="cursoescolhido" id="cursoescolhido" required> 
+                          <optgroup label="Selecione o curso"></optgroup>
+                          <option value="robotica">Robótica 5D - R$2278,80</option>
+                          <option value="ingles">Inglês para Babies - R$2878,80</option>
+                          <option value="desenho">Desenho e Ação - R$1438,80</option>
+                          <option value="musica">Musicalização - R$2518,80</option>
+                      </select>
+                    </div>
+                    <div>
+                        <label>Data de ingresso*:</label>
+                        <input name="dting" value="2022-01-01" type="date" max="2022-09-01" min="1901-01-01" id="dting" required>
+                    </div>
+                    
+                    <div>
+                        <label>Forma de Pagamento:</label>
+                        <select name="formapgto" id="formapgto" required> 
+                          <optgroup label="Selecione a forma de pagamento"></optgroup>
+                          <option value="avista">Á vista</option>
+                          <option value="3x">3x sem juros</option>
+                          <option value="6x">6x sem juros</option>
+                          <option value="9x">9x sem juros</option>
+                          <option value="12x">12x sem juros</option>
+                      </select>
+                    </div>
+                                  
+                    <div>
+                        <label> Responsável Financeiro:</label>
+                        <select name="respfinan" id="respfinan" required> 
+                          <optgroup label="Selecione o Responsável Financeiro"></optgroup>
+                          <option value="resppai">Responsável Financeiro - Pai</option>
+                          <option value="respmae">Reponsável Financeiro - Mãe</option>
+                      </select>
+                      <hr>
+        
+        
+                    </div>
+                    <div style="text-align:center">
+                        <button type="submit">VOLTAR</button>
+                        <button type="submit" formnovalidate>Salvar Rascunho</button><!-- tag usada para não precisar preencher todos os campos ao salvar-->
+                        <button type="submit">ENVIAR</button>
+                    </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end contact section -->
+<br>
+    
+    <!-- footer section -->
+    <section class="container-fluid footer_section ">
+      <div class="tow">
+        <div class="col-lg-7 col-md-9 mx-auto">
+          <p>
+            &copy; 2022 All Rights Reserved. Design by
+            <a href="https://html.design/">Free Html Templates</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- footer section -->
+  </div>
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width");
+      document
+        .querySelector(".custom_menu-btn")
+        .classList.toggle("menu_btn-style");
+    }
+  </script>
+</body>
+
+</html>
